@@ -9,10 +9,8 @@ const deleteHandler = () => {
 
   return (
     <div className="todo">
-      <li className="todo-tem">{text}</li>
-      <button className="complete-btn">
-        <i className="fas fa-check"></i>
-      </button>
+      <li className={`todo-item ${todo.completed} ? zcompleted : ''`}>{text}</li>
+     
       <button onClick={deleteHandler} className="trash-btn">
         <i className="fas fa-trash"></i>
       </button>

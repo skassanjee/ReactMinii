@@ -26,13 +26,13 @@ const Form = ({setInputText,inputText, setTodos, todos}) => {
         <button onClick={submitTodoHandler} className="todo-button" type="submit">
             <i className="fas fa-plus-square"></i>
         </button>
-        <div className="select">
+        {/* <div className="select">
             <select name="todos" className="filter-todo">
                 <option vaule="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="uncompleted">uncompleted</option>
             </select>
-        </div>
+        </div> */}
     </form>
   )
 }
